@@ -103,7 +103,11 @@ now go to http://127.0.0.1:5000/
 
 ## To run the Pipeline
 
-Option 1: Directly run the python file
+**Option 1:** 
+Directly run the python file.
 
-Option 2: Download the 'IRIS-classifier Kubeflow Pipeline.yaml' file and go to Pipeline section and create new pipeline by uploading this yaml file. 
+Python code will train and predict the model and also it will create pipelines in kubeflow and pass the metrics to MLFlow. So you can see Kubeflow and MLFlow are installed inside minikube and we can access their UI under same url but on different ports. But connection between MLFlow and Kubeflow is not possible that directly. For that we have to use this special IP to access MLFlow inside Kubeflow component: http://host.docker.internal:5000/.
+
+**Option 2:** 
+Download the '_IRIS-classifier Kubeflow Pipeline.yaml_' file and go to Pipeline section and create new pipeline by uploading this yaml file. 
 
