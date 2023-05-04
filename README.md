@@ -38,7 +38,7 @@ minikube start
 
 kubectl create namespace mlflow
 
-kubectl create -f Kubeflow_and_MLFlow.yaml`
+kubectl create -f Kubeflow_and_MLFlow.yaml
 ```
 
 > OR you can install then one-by-one also
